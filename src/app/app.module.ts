@@ -1,3 +1,4 @@
+import { MsiService } from './services/msi.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -15,7 +16,9 @@ import { MsiFormComponent } from './msi-form/msi-form.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    MsiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
