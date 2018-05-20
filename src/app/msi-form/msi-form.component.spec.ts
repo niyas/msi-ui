@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from "@angular/forms";
 
 import { MsiFormComponent } from './msi-form.component';
 
@@ -8,7 +9,8 @@ describe('MsiFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MsiFormComponent ]
+      declarations: [ MsiFormComponent ],
+      imports: [FormsModule]
     })
     .compileComponents();
   }));
