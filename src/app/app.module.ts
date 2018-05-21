@@ -6,6 +6,7 @@ import { AppErrorHandler } from './common/app-error-handler';
 import { MsiService } from './services/msi.service';
 import { AppComponent } from './app.component';
 import { MsiFormComponent } from './msi-form/msi-form.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MsiFormComponent } from './msi-form/msi-form.component';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [
     MsiService,
