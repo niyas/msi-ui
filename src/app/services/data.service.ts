@@ -21,7 +21,9 @@ export class DataService {
 
     create(resource) {
          return this.http.post(this.url, JSON.stringify(resource), this.options)
-            .map(response => response.json())
+            .map(response => {
+              return response.json();
+            })
             .catch(this.handleError);
     }
 
